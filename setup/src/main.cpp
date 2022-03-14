@@ -218,7 +218,7 @@ bool checkFingerPrint(uint8_t p)
     Serial.println("Fingerprint transformed");
     return true;
   case FINGERPRINT_NOFINGER:
-    Serial.println("No Fingerprint");
+    // don't log here! it will spam the output
     return false;
   case FINGERPRINT_IMAGEFAIL:
     Serial.println("Imaging error");
